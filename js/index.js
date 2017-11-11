@@ -6,6 +6,8 @@ function checkName(name) {
 	// if name is right, go to next page; otherwise, return an error
 	if (name.toLowerCase() == "tu" || name.toLowerCase() == "sang") {
 		toSecondPage(name);
+	} else if  (name == "") {
+		document.getElementById("nameError").innerHTML = "Your name cannot be empty";
 	} else {
 		document.getElementById("nameError").innerHTML = "You may not be allowed here";
 	}
