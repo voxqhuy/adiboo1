@@ -1,12 +1,21 @@
+
 body {
   color: #ffffff;
+  height: 50vh;
+}
+
+#welcome {
+	width: 100%;
+	height: 100%;
 }
 
 #welcome #boo {
   background-color: #1abc9c;
   width: 100%;
+  height: 50%;
 }
 #welcome #user_name {
   background-color: #474e5d;
   width: 100%;
+  height: 100%;
 }
