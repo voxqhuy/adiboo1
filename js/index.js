@@ -14,7 +14,8 @@ function checkName(name) {
 }
 
 function toSecondPage(name) {
-	alert("Hi " + name + ", How r ya? It's currently under construction. Coming Soon!");
+	// alert("Hi " + name + ", How r ya? It's currently under construction. Coming Soon!");
+	window.location.href = "test.html";
 }
 
 $(document).ready(function() {

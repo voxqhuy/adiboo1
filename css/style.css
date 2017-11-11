@@ -19,3 +19,17 @@ body {
   width: 100%;
   height: 100%;
 }
+
+#test, #testBox {
+	width: 100%;
+	height: 600px;
+	background-color: #474e5d;
+}
+
+.nav-justified li a {
+	color: #ffffff;
+	font-size: 52px;
+	font-weight: bold;
+	font-family: "Gill Sans", sans-serif;
+	height: 100px;
+}
