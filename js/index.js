@@ -1,8 +1,12 @@
+var requestURL = 'https://api.myjson.com/bins/q4ib7';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+
 function checkName(name) {
-
 	// get name from the user
-	// name = document.getElementById("usr").value;
-
 	// if name is right, go to next page; otherwise, return an error
 	if (name.toLowerCase() == "tu" || name.toLowerCase() == "sang") {
 		toSecondPage(name);
@@ -14,14 +18,19 @@ function checkName(name) {
 }
 
 function toSecondPage(name) {
-	// alert("Hi " + name + ", How r ya? It's currently under construction. Coming Soon!");
 	window.location.href = "test.html";
+
 }
 
 $(document).ready(function() {
-  $('#usr').keypress(function(e) {
-  	if(e.which == 13) {
-  		checkName(this.value)
+	$('#usr').keypress(function(e) {
+		if(e.which == 13) {
+			checkName(this.value)
   	}
   });
+	// console.log(request == null);
+	// request.onload = function() {
+	// 	var superHeroes = request.response;
+	// 	console.log(superHeroes);
+	// }
 });

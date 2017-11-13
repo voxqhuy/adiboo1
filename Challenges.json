@@ -1,0 +1,21 @@
+{
+	"firstChallenge" : [
+		{
+			"name" : "selfie",
+			"description": "Start things off right with a selfie! Explore the self-timer setting on your camera."
+		},
+		{
+			"name" : "sunset",
+			"description" : "This week's photography challenge is to get out and photograph at the end of the light - sunrise or sunset. Best times of day for landscape photography!"
+		},
+		{
+			"name" : "Rule of Thirds",
+			"description" : "Lets open up space in the frame to look into the background and see what else is going on in the frame"
+		},
+		{
+			"name" : "Something blue",
+			"description" : "What color is the sky? How about the ocean? Discover the world of this lovely color"
+		}
+
+	]
+}
