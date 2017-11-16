@@ -18,19 +18,44 @@ function checkName(name) {
 }
 
 function toSecondPage(name) {
-	window.location.href = "test.html";
-
+	window.location.href = "test1.html";
 }
+
 
 $(document).ready(function() {
 	$('#usr').keypress(function(e) {
 		if(e.which == 13) {
 			checkName(this.value)
-  	}
+	}
   });
 	// console.log(request == null);
 	// request.onload = function() {
 	// 	var superHeroes = request.response;
 	// 	console.log(superHeroes);
 	// }
+
+	$("#next1").click(function() {
+			window.location=document.getElementById('test12').href;
+	});
+
+	$("#next2").click(function() {
+			window.location=document.getElementById('test23').href;
+	});
+
+	$("#next3").click(function() {
+			window.location=document.getElementById('test34').href;
+	});
+
+	$("#prev2").click(function() {
+			window.location=document.getElementById('test21').href;
+	});
+
+	$("#prev3").click(function() {
+			window.location=document.getElementById('test32').href;
+	});
+
+	$("#prev4").click(function() {
+			window.location=document.getElementById('test43').href;
+	});
+
 });
