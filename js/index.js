@@ -18,7 +18,7 @@ function checkName(name) {
 }
 
 function toSecondPage(name) {
-	window.location.href = "../Test Page/test1.html";
+	window.location.href = "Test Page/test1.html";
 }
 
 
