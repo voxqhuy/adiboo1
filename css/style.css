@@ -1,4 +1,7 @@
 
+
+
+
 body {
   color: #ffffff;
   height: 50vh;
@@ -20,7 +23,13 @@ body {
   height: 100%;
 }
 
-#test, #testBox {
+#test, .testBox {
+	width: 100%;
+	height: 640px;
+	background-color: #6e7178;
+}
+
+#adibooPage {
 	width: 100%;
 	height: 640px;
 	background-color: #6e7178;
@@ -42,7 +51,6 @@ body {
   }
 
 .jumbotron {
-	margin-top: 40px;
 	height: 70vh;
 	width: 90%;
 	background-color: #242527;
@@ -54,13 +62,17 @@ body {
 	color: #ffffff;
 }
 
-#testNav {
+.testNav {
 	width: 90%;
 	background-color: #1abc9c;
 }
 
-#profileNav, #adibooNav {
+.profileNav, .adibooNav {
 	width: 5%;
+}
+
+.profileBox, .testBox {
+	padding-top: 48px;
 }
 
 .card {
@@ -76,4 +88,47 @@ body {
 	border: 1px solid #dee2e6 !important;
 	border-radius: 3px;
 	background: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 768px) {
+	.profile-menu .collapse {
+		display: block;
+	}
+}
+
+/* profile buttons */
+.profileButton {
+	color: #fff;
+	background-color: #8518f7;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border-radius: 0px;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+.profile-button {
+	background-color: #242527;
+}
+.profile-button:hover {
+	color: #000 !important;
+	background-color: #fff;
+}
+.history-button {
+	background-color: #242527;
+}
+.history-button:hover {
+	color: #000 !important;
+	background-color: #fff;
+}
+.note-button {
+	background-color: #242527;
+}
+.note-button:hover {
+	color: #000 !important;
+	background-color: #fff;
 }
