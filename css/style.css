@@ -13,22 +13,7 @@ body {
 	width:100%;
 }
 
-/*#welcome #user_name {
-  background-color: #474e5d;
-  width: 100%;
-  height: 100%;
-}*/
 
-#test, .testBox {
-	display: inline-block;
-	width: 100%;
-	height: 640px;
-}
-
-#adibooPage {
-	width: 100%;
-	height: 640px;
-}
 
 .nav li a {
 
@@ -65,10 +50,6 @@ body {
 	width: 5%;
 }
 
-.profileBox, .testBox {
-	padding-top: 48px;
-}
-
 .carousel-control-prev {
 	width: 4%;
 }
@@ -89,6 +70,11 @@ body {
 		display: block;
 	}
 }
+/* Global main views settings */
+.mainView {
+	padding: 48px;
+}
+
 /* Colors */
 .tealBg {
 	background-color: #1abc9c;
@@ -105,21 +91,14 @@ body {
 
 /* Global pages look */
 .pageWrapper {
-	position: relative;
-	height: 100%;
 	width: 100%;
-	background: 
+	height: 100vh;
 }
 
 /* Global divs */
-.divFullParent {
-	position: relative;
-	height: 100%;
-	width: 100%;
-}
 .div50height {
 	position: relative;
-    height: 50%;
+    height: 50vh;
     width: 100%;
 }
 
