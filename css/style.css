@@ -19,18 +19,6 @@ body {
 	height: 80%;
   }
 
-.jumbotron {
-	height: 70vh;
-	width: 90%;
-	background-color: #242527;
-}
-
-.pagination li a{
-	border: 1px solid #000000;
-	background-color: #242527;
-	color: #ffffff;
-}
-
 .carousel-control-prev {
 	width: 4%;
 }
@@ -44,13 +32,14 @@ body {
 
 
 
-/* Global pages look */
+/****** Global pages look ******/
 .welcomeScreen{
 	width: 100%;
 	height: 100vh;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 }
+
 .pageWrapper {
 	width: 100%;
 	height: 100vh;
@@ -60,8 +49,8 @@ body {
     					 "mainView";
 }
 
-/* The navbars */
-nav {
+/****** The navbars ******/
+.pageWrapper nav {
 	grid-area: nav;
 	display: grid;
 	grid-template-columns: minmax(40px, 10%) 80% minmax(40px, 10%);
@@ -79,13 +68,14 @@ nav {
 	grid-column: 3;
 }
 
+
+/****** View Settings ******/
 /* Global main views settings */
 .mainView {
 	grid-area: mainView;
 	background-image: url("https://i.ytimg.com/vi/pMsz9fcOyGY/maxresdefault.jpg");
 	background-size: cover;
 }
-
 
 /* test views settings */
 .testView {
@@ -106,24 +96,24 @@ nav {
 	grid-template: minmax(80px, 1fr) minmax(80px, 1fr) / minmax(80px, 1fr) minmax(80px, 1fr);
 }
 
-
-.testOptionsButtons {
-	width: 80%;
-	height: 90%;
-	background-color: #2f4435;
-	opacity: 0.95;
-	border: 0px;
-	margin:0 auto;
-	display: flex;
-  	justify-content: center;
+.testBox .jumbotron {
+	height: 100%;
+	width: 100%;
+	background-color: #242527;
+	text-align: center;
 }
 
-.testOptionsButtons span{
-	display: inline-block;
-	
+.testFooter .pagination {
+
 }
 
-/* Colors */
+.pagination li a{
+	border: 1px solid #000000;
+	background-color: #242527;
+	color: #ffffff;
+}
+
+/****** Colors ******/
 .tealBg {
 	background-color: #167a3e;
 }
@@ -150,11 +140,19 @@ nav {
   	align-items: center;
 }
 
-/* Global buttons */
+/****** Font Styles ******/
+.navFont {
+	color: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: "Gill Sans", sans-serif;
+}
 
 
-/* Test buttons */
+/********** Items **********/
 
+/***** Buttons *****/
+/* test buttons */
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -163,6 +161,22 @@ nav {
 	.profile-menu .collapse {
 		display: block;
 	}
+}
+
+.testOptionsButtons {
+	width: 80%;
+	height: 90%;
+	background-color: #2f4435;
+	opacity: 0.95;
+	border: 0px;
+	margin:0 auto;
+	display: flex;
+  	justify-content: center;
+}
+
+.testOptionsButtons span{
+	display: inline-block;
+	
 }
 
 /* profile buttons */
@@ -200,10 +214,8 @@ nav {
 	background-color: #fff;
 }
 
-/* Font Styles */
-.navFont {
-	color: #fff;
-	font-size: 26px;
-	font-weight: bold;
-	font-family: "Gill Sans", sans-serif;
+/****** Images ******/ 
+/* navbar icons */
+.navIcons {
+	width:36px;
 }
