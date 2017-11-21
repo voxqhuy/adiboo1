@@ -22,49 +22,53 @@
 		<body>
 		<script src="../js/index.js"></script>
 		<div class="pageWrapper lightGreyBg">
-			<ul class="nav nav-fill">
-				<li class="nav-item bg-dark profileNav">
-			      <a class="nav-brand " href="#">
+
+			<!-- The navigation bar -->
+			<nav>
+				<div class="bg-dark profileNav centeredContent">
+			      <a class="navFont" href="../Profile Page/profile.html">
 			        <img class="navIcons" src="https://cdn4.iconfinder.com/data/icons/seo-web-pro-1/512/Human_Resources-01-512.png" alt="profileLogo">
 			      </a>
-			    </li>
-
-				<li class="nav-item testNav tealBg">
-					<a class="nav-link active" href="../Test Page/test1.html">Test</a>
-				</li>
-				
-				<li class="nav-item bg-dark adibooNav">
-			      <a class="nav-brand " href="../Adiboo/adiboo.html">
+			    </div>
+				<div class="greenBg testNav centeredContent">
+					<a class="navFont active" href="#">Test</a>
+				</div>
+				<div class="bg-dark adibooNav centeredContent">
+			      <a class="navFont" href="../Adiboo/adiboo.html">
 			        <img class="navIcons" src="https://i.imgur.com/eMm0VS7.png" alt="adibooLogo">
 			      </a>
-			    </li>
-			</ul>
-			<div class="mainView row ">
-				<div class="col-lg-2">
-					<div >
-						<button class="btn btn-block btn-lg profileButton animated-button profile-button">Profile</button>
+			    </div>
+			</nav>
+			<div class="mainView">
+				<!-- The gap between navbar and the main views -->
+				<div class="viewGap">The section is under construction</div>
+				<div class="leftContent">
+						<button class="btn btn-block btn-lg profileButton animated-button profile-button disabled">Overview</button>
+						<button class="btn btn-block btn-lg profileButton animated-button setting-button">Settings</button>
 						<button class="btn btn-block btn-lg profileButton animated-button history-button">History</button>
 						<button class="btn btn-block btn-lg profileButton animated-button note-button">Notes</button>
+				</div>
+				<!-- profile view -->
+				<div class="contentView profileView">
+					<div class="profileCard centeredContent">
+						<div class="card tealBg centeredContent">
+						    <img class="card-img-top" src="https://png.icons8.com/circled-user-male-skin-type-4/color/1600" alt="Card image" style="width:80%">
+						    <div class="card-body">
+						      <h4 class="card-title centeredContent">Tu</h4>
+						      <p class="card-text">Tu is an architect and engineer</p>
+						      <a href="#" class="btn btn-dark centeredContent">See Profile</a>
+						    </div>
+						</div>
+					</div>
+					<div class="profileInfo centeredContent">
+						<div class="jumbotron">
+							<h1>"I'm a smart guy"</h1>
+							<p>At the age of five, Tu started playing for the Grandoli, a local club coached by his father. By the time he turned eight, he was playing for Newell’s Old Boys. The group was immensely talented, which is visible from the fact that they lost just a single match in the next four years. It was their sheer interest and talent for the game that made the group popularly known as ‘The Machine of '87’</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 d-flex align-items-center flex-column">
-					<div class="card text-center d-flex align-items-center flex-column justify-content-center tealBg" style="width:320px" style="height: 100%">
-					    <img class="card-img-top" src="https://png.icons8.com/circled-user-male-skin-type-4/color/1600" alt="Card image" style="width:80%">
-					    <div class="card-body">
-					      <h4 class="card-title">Tu</h4>
-					      <p class="card-text">Tu is an architect and engineer</p>
-					      <a href="#" class="btn btn-dark">See Profile</a>
-					    </div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="text-center d-flex align-items-center flex-column justify-content-center">
-					<div class="jumbotron">
-						<h1>"I'm a smart guy"</h1>
-						<p>At the age of five, Tu started playing for the Grandoli, a local club coached by his father. By the time he turned eight, he was playing for Newell’s Old Boys. The group was immensely talented, which is visible from the fact that they lost just a single match in the next four years. It was their sheer interest and talent for the game that made the group popularly known as ‘The Machine of '87’</p>
-					</div>
-				</div>
-				</div>
+				<div class="rightContent"></div>
+				<div class="contentFooter"></div>
 			</div>
 		</div>
 	</body>

@@ -60,6 +60,7 @@ body {
 	grid-column: 1;
 }
 
+
 .testNav {
 	grid-column: 2;
 }
@@ -75,36 +76,64 @@ body {
 	grid-area: mainView;
 	background-image: url("https://i.ytimg.com/vi/pMsz9fcOyGY/maxresdefault.jpg");
 	background-size: cover;
-}
-
-/* test views settings */
-.testView {
 	display: grid;
-	grid-template: 8% 82% 10% / minmax(40px, 10%) 80% minmax(40px, 10%);
+	grid-template: 5% 85% 10% / minmax(40px, 10%) 80% minmax(40px, 10%);
 }
 
-.testBox {
+.viewGap {
+	grid-area: 1 / 1 / auto/ span 3;
+	text-align: center;
+	color: red;
+	background-color: yellow;
+}
+
+.leftContent {
+	grid-area: 2 / 1 / span 2 / auto;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.contentBox {
 	grid-area: 2 / 2;
 }
 
-.testFooter {
+.rightContent {
+	grid-area: 2 / 3;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.contentFooter {
 	grid-area: 3 / 2;
 }
 
+/* Profile views */
+.profileView {
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+
+.profileCard .card {
+	width: 60%;
+}
+
+.profileInfo .jumbotron {
+	height: 90%;
+	width: 100%;
+	background-color: #242527;
+}
+
+/* test views */
 .testOptions {
 	display: grid;
 	grid-template: minmax(80px, 1fr) minmax(80px, 1fr) / minmax(80px, 1fr) minmax(80px, 1fr);
 }
 
-.testBox .jumbotron {
+.contentBox .jumbotron {
 	height: 100%;
 	width: 100%;
 	background-color: #242527;
 	text-align: center;
-}
-
-.testFooter .pagination {
-
 }
 
 .pagination li a{
@@ -114,8 +143,12 @@ body {
 }
 
 /****** Colors ******/
-.tealBg {
+.greenBg {
 	background-color: #167a3e;
+}
+
+.tealBg {
+	background-color: #0b9178;
 }
 
 .lightGreyBg {
@@ -183,7 +216,7 @@ body {
 .profileButton {
 	color: #fff;
 	background-color: #8518f7;
-	opacity: 0.8;
+	opacity: 0.95;
 	cursor: pointer;
 	display: block;
 	position: relative;
@@ -197,21 +230,30 @@ body {
 }
 .profile-button:hover {
 	color: #000 !important;
-	background-color: #fff;
+	background-color: #0b9178;
 }
+
+.setting-button {
+	background-color: #242527;
+}
+.setting-button:hover {
+	color: #000 !important;
+	background-color: #0b9178;
+}
+
 .history-button {
 	background-color: #242527;
 }
 .history-button:hover {
 	color: #000 !important;
-	background-color: #fff;
+	background-color: #0b9178;
 }
 .note-button {
 	background-color: #242527;
 }
 .note-button:hover {
 	color: #000 !important;
-	background-color: #fff;
+	background-color: #0b9178;
 }
 
 /****** Images ******/ 
