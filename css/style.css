@@ -84,46 +84,16 @@ body {
 /*	background-image: url("https://i.ytimg.com/vi/pMsz9fcOyGY/maxresdefault.jpg");
 
 	background-size: cover;*/
-/*	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background: linear-gradient(-45deg, #3c4752, #694156, #85704c, #887b75);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;*/
-	background: url('https://i.ytimg.com/vi/pMsz9fcOyGY/maxresdefault.jpg') repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
+	animation: Gradient 15s ease infinite;
+
 	display: grid;
 	grid-template: 5% 85% 10% / minmax(40px, 10%) 80% minmax(40px, 10%);
 }
-@-webkit-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@-moz-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@-ms-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@-o-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
- 
-@keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
-}
-
-/*@-webkit-keyframes Gradient {
+@-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
 	}
@@ -157,7 +127,7 @@ body {
 	100% {
 		background-position: 0% 50%
 	}
-}*/
+}
 
 
 .viewGap {
