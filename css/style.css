@@ -65,6 +65,13 @@ body {
 	grid-column: 2;
 }
 
+.testNav a {
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
 .adibooNav {
 	grid-column: 3;
 }
@@ -85,6 +92,7 @@ body {
 	text-align: center;
 	color: red;
 	background-color: yellow;
+	opacity: 0.5;
 }
 
 .leftContent {
@@ -197,18 +205,31 @@ body {
 }
 
 .testOptionsButtons {
+	color: #fff;
 	width: 80%;
-	height: 90%;
+	height: 38vh;
+	padding: 5px 0 5px 0;
 	background-color: #2f4435;
-	opacity: 0.95;
+	opacity: 0.98;
 	border: 0px;
-	margin:0 auto;
+	margin: auto;
+	align-items: center;
 	display: flex;
-  	justify-content: center;
+  	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+
+.testOptionsButtons {
+	background-color: #242527;
+}
+.testOptionsButtons:hover {
+	color: #000 !important;
+	background-color: #167a3e;
 }
 
 .testOptionsButtons span{
-	display: inline-block;
+	margin:auto;
+	text-align:center;
 	
 }
 
