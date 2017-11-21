@@ -81,6 +81,7 @@ body {
 /* Global main views settings */
 .mainView {
 	grid-area: mainView;
+	width: 100%;
 /*	background-image: url("https://i.ytimg.com/vi/pMsz9fcOyGY/maxresdefault.jpg");
 
 	background-size: cover;*/
