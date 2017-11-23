@@ -58,4 +58,25 @@ $(document).ready(function() {
 			window.location=document.getElementById('test43').href;
 	});
 
+	// Profile buttons' handlers
+	$(".profileButton").click(function() {
+		var id = this.id;
+		switch (id) {
+			case 'profileOverviewBtn':
+				window.location.href = "settings.html";
+				break;
+
+			case 'profileSettingsBtn':
+				window.location.href = "settings.html";
+				break;
+
+			case 'profileHistoryBtn':
+				window.location.href = "settings.html";
+				break;
+
+			case 'profileNotesBtn':
+				window.location.href = "settings.html";
+				break;
+		}
+	});
 });
