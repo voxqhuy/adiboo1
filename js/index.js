@@ -63,7 +63,7 @@ $(document).ready(function() {
 		var id = this.id;
 		switch (id) {
 			case 'profileOverviewBtn':
-				window.location.href = "settings.html";
+				window.location.href = "overview.html";
 				break;
 
 			case 'profileSettingsBtn':
@@ -71,12 +71,16 @@ $(document).ready(function() {
 				break;
 
 			case 'profileHistoryBtn':
-				window.location.href = "settings.html";
+				window.location.href = "history.html";
 				break;
 
 			case 'profileNotesBtn':
-				window.location.href = "settings.html";
+				window.location.href = "notes.html";
 				break;
 		}
+	});
+
+	$("#profileEditBtn").click(function() {
+			window.location.href = "settings.html";
 	});
 });

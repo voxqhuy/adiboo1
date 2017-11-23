@@ -174,7 +174,11 @@ body {
 .profileCard .card {
 	width: 100%;
 	border-radius: 0px;
+}
 
+/* hide the See Profile button in Overview */
+#hiddenSeeProfile {
+	visibility: hidden;
 }
 
 .profileInfo .jumbotron {
@@ -182,6 +186,14 @@ body {
 	width: 100%;
 	background-color: #242527;
 	border-radius: 0px;
+}
+
+.historyMonth {
+	background-color: #000;
+}
+
+.noteList {
+	background-color: #000;
 }
 
 /* test views */
