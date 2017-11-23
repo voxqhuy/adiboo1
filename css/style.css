@@ -171,9 +171,28 @@ body {
 	grid-auto-rows: 60% 40%;
 }
 
+/* profile Card */
 .profileCard .card {
 	width: 100%;
 	border-radius: 0px;
+}
+
+.card-img-top {
+	width: 75%;
+}
+
+.card-body {
+	padding: 0;
+}
+
+.card-body p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	line-height: 18px;     /* fallback */
+	max-height: 36px;      /* fallback */
+	-webkit-line-clamp: 3; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
 
 /* hide the See Profile button in Overview */
@@ -240,6 +259,10 @@ body {
 	background-color: #652984;
 }
 
+.orangeBg {
+	background-color: #b75409;
+}
+
 /* Global divs */
 /*.div50height {
 	position: relative;
@@ -278,10 +301,10 @@ body {
 
 .testOptionsButtons {
 	color: #fff;
+	background-color: #242527;
 	width: 80%;
 	height: 38vh;
 	padding: 5px 0 5px 0;
-	background-color: #2f4435;
 	opacity: 0.98;
 	border: 0px;
 	margin: auto;
@@ -291,9 +314,10 @@ body {
 0s;
 }
 
-.testOptionsButtons {
-	background-color: #242527;
+.testOptionsButtons img {
+	width: 70%;
 }
+
 .testOptionsButtons:hover {
 	color: #000 !important;
 	background-color: #167a3e;
