@@ -33,13 +33,6 @@ body {
 
 
 /****** Global pages look ******/
-.welcomeScreen{
-	width: 100%;
-	height: 100vh;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-}
-
 .pageWrapper {
 	width: 100%;
 	height: 100vh;
@@ -47,6 +40,35 @@ body {
 	grid-template-rows: 7% 93%;
 	grid-template-areas: "nav"
     					 "mainView";
+}
+
+/* Welcome page's look */
+.welcomeScreen{
+	width: 100%;
+	height: 100vh;
+	overflow: scroll;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.welcomeView {
+	height: 50vh;
+}
+
+.welcomeScreen div h3 {
+	font-size: 5vh;
+}
+
+.welcomeView input[type="text"] {
+	max-height: 32px;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+#booImg {
+	display: block;
+	max-height: 80%;
+	width: auto; 
 }
 
 /****** The navbars ******/
@@ -363,6 +385,7 @@ body {
 /* profile buttons */
 .profileButton {
 	color: #fff;
+	font-size: 70%;
 	cursor: pointer;
 	display: block;
 	position: relative;
