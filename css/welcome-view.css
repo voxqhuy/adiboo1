@@ -1,0 +1,23 @@
+.welcomeScreen {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr; }
+
+.welcomeScreen div h3 {
+  font-size: 5vh; }
+
+.welcomeView {
+  height: 50vh; }
+
+.welcomeView input[type="text"] {
+  max-height: 32px;
+  font-size: 20px;
+  line-height: 24px; }
+
+#booImg {
+  display: block;
+  max-height: 80%;
+  width: auto; }
+
+/*# sourceMappingURL=welcome-view.css.map */

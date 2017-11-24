@@ -1,0 +1,23 @@
+/* test views */
+
+.testView {
+  display: grid;
+  grid-auto-rows: 90% 10%;
+}
+
+.testOptions {
+  display: grid;
+  grid-template: minmax(80px, 1fr) (minmax(80px, 1fr) / minmax(80px, 1fr)) minmax(80px, 1fr);
+}
+
+.contentBox .jumbotron {
+  height: 100%;
+  width: 100%;
+  background-color: #242527;
+}
+
+.pagination li a {
+  border: 1px solid #000000;
+  background-color: #242527;
+  color: #ffffff;
+}
