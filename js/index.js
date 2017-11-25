@@ -5,7 +5,7 @@ request.responseType = 'json';
 request.send();
 
 var timer;
-	
+
 
 
 
@@ -30,8 +30,8 @@ $(document).ready(function() {
 	$('#usr').keypress(function(e) {
 		if(e.which == 13) {
 			checkName(this.value)
-	}
-  });
+		}
+	});
 	// console.log(request == null);
 	// request.onload = function() {
 	// 	var superHeroes = request.response;
@@ -39,52 +39,52 @@ $(document).ready(function() {
 	// }
 
 	$("#next1").click(function() {
-			window.location=document.getElementById('test12').href;
+		window.location=document.getElementById('test12').href;
 	});
 
 	$("#next2").click(function() {
-			window.location=document.getElementById('test23').href;
+		window.location=document.getElementById('test23').href;
 	});
 
 	$("#next3").click(function() {
-			window.location=document.getElementById('test34').href;
+		window.location=document.getElementById('test34').href;
 	});
 
 	$("#prev2").click(function() {
-			window.location=document.getElementById('test21').href;
+		window.location=document.getElementById('test21').href;
 	});
 
 	$("#prev3").click(function() {
-			window.location=document.getElementById('test32').href;
+		window.location=document.getElementById('test32').href;
 	});
 
 	$("#prev4").click(function() {
-			window.location=document.getElementById('test43').href;
+		window.location=document.getElementById('test43').href;
 	});
 
 	// Profile buttons' handlers
-	$(".profileButton").click(function() {
+	$(".btn").click(function() {
 		var id = this.id;
 		switch (id) {
 			case 'profileOverviewBtn':
-				window.location.href = "overview.html";
-				break;
+			window.location.href = "overview.html";
+			break;
 
 			case 'profileSettingsBtn':
-				window.location.href = "settings.html";
-				break;
+			window.location.href = "settings.html";
+			break;
 
 			case 'profileHistoryBtn':
-				window.location.href = "history.html";
-				break;
+			window.location.href = "history.html";
+			break;
 
 			case 'profileNotesBtn':
-				window.location.href = "notes.html";
-				break;
+			window.location.href = "notes.html";
+			break;
 		}
 	});
 	$("#profileEditBtn").click(function() {
-			window.location.href = "settings.html";
+		window.location.href = "settings.html";
 	});
 
 	// var weeklytestAnchor = document.getElementById('weeklyTestIcon');
@@ -94,7 +94,7 @@ $(document).ready(function() {
 	// 	timer = setTimeout(function(){
  //                weeklytestIcon.src = '../Icons/weeklytest-white.png';
  //            }, 200);
-	   
+
 	// };
 
 	// weeklytestAnchor.onmouseover = function () {

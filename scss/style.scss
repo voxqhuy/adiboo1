@@ -1,18 +1,18 @@
 @import "variables";
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  height: 100%;
-  width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 body {
-  color: #fff;
-  height: 100%;
-  width: 100%;
+	color: #fff;
+	height: 100%;
+	width: 100%;
 } 
 /****** View Settings ******/
 @import "welcome-view";
@@ -22,16 +22,16 @@ body {
 @import "adiboo-view";
 
 .centeredContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /****** Font Styles ******/
 
 .navFont {
-  color: #fff;
-  font-size: 26px;
-  font-weight: bold;
-  font-family: "Gill Sans", sans-serif;
+	color: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: "Gill Sans", sans-serif;
 }
