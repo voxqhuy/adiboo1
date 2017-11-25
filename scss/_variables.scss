@@ -28,3 +28,20 @@ $border-width : 1px;
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin ellipsis($maxWidth, $lineHeight, $maxHeight, $maxLine) {
+	width: 100%;
+	max-width: $maxWidth;
+	padding: 0 10% 0 10%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	line-height: $lineHeight;
+	/* fallback */
+	max-height: $maxHeight;
+	/* fallback */
+	-webkit-line-clamp: $maxLine;
+	/* number of lines to show */
+	-webkit-box-orient: vertical;
+	
+}

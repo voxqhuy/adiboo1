@@ -158,32 +158,6 @@ body {
           border-top-right-radius: calc(0.25rem - 1px); }
       .profileView .profileCard .card .card-body {
         padding: 0; }
-        .profileView .profileCard .card .card-body h5 {
-          width: 100%;
-          padding: 0 10% 0 10%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          line-height: 18px;
-          /* fallback */
-          max-height: 20px;
-          /* fallback */
-          -webkit-line-clamp: 1;
-          /* number of lines to show */
-          -webkit-box-orient: vertical; }
-        .profileView .profileCard .card .card-body p {
-          width: 100%;
-          padding: 0 10% 0 10%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          line-height: 20px;
-          /* fallback */
-          max-height: 20px;
-          /* fallback */
-          -webkit-line-clamp: 1;
-          /* number of lines to show */
-          -webkit-box-orient: vertical; }
       .profileView .profileCard .card .updateAvatarBtn {
         background-color: #634b42;
         width: 100%;

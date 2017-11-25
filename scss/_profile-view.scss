@@ -36,34 +36,6 @@
 			}
 			.card-body {
 				padding: 0;
-				h5 {
-					width: 100%;
-					padding: 0 10% 0 10%;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					display: -webkit-box;
-					line-height: 18px;
-					/* fallback */
-					max-height: 20px;
-					/* fallback */
-					-webkit-line-clamp: 1;
-					/* number of lines to show */
-					-webkit-box-orient: vertical;
-				}
-				p {
-					width: 100%;
-					padding: 0 10% 0 10%;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					display: -webkit-box;
-					line-height: 20px;
-					/* fallback */
-					max-height: 20px;
-					/* fallback */
-					-webkit-line-clamp: 1;
-					/* number of lines to show */
-					-webkit-box-orient: vertical;
-				}
 			}
 			.updateAvatarBtn {
 				background-color: $dark-tan;
