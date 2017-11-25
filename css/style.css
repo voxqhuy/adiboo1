@@ -1,5 +1,7 @@
+/*** variables ***/
 /* colors */
 /* width */
+/*** mixins ***/
 * {
   margin: 0;
   padding: 0; }
@@ -22,6 +24,10 @@ body {
   .welcomeScreen #welcomeBoo {
     background-color: #6A8455;
     height: 50vh; }
+    .welcomeScreen #welcomeBoo #booImg {
+      display: block;
+      max-height: 80%;
+      width: auto; }
   .welcomeScreen #welcomeSignIn {
     background-color: #634b42;
     height: 50vh; }
@@ -33,11 +39,6 @@ body {
   max-height: 32px;
   font-size: 20px;
   line-height: 24px; }
-
-#booImg {
-  display: block;
-  max-height: 80%;
-  width: auto; }
 
 .pageWrapper {
   width: 100%;
@@ -51,7 +52,8 @@ body {
     grid-template-columns: minmax(40px, 10%) 80% minmax(40px, 10%);
     /****** The navbars ******/ }
     .pageWrapper nav .profileNav {
-      background-color: #333;
+      background-color: #222;
+      cursor: pointer;
       grid-column: 1; }
     .pageWrapper nav .testNav {
       grid-column: 2;
@@ -62,7 +64,8 @@ body {
         text-decoration: none;
         color: #eee; }
     .pageWrapper nav .adibooNav {
-      background-color: #333;
+      background-color: #222;
+      cursor: pointer;
       grid-column: 3; }
 
 /* Global main views settings */
@@ -193,7 +196,7 @@ body {
       height: 100%;
       border-radius: 0px;
       color: #eee;
-      background-color: #333;
+      background-color: #222;
       border-width: 0px;
       cursor: pointer;
       transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
@@ -205,7 +208,7 @@ body {
       height: 100%;
       border-radius: 0px;
       color: #eee;
-      background-color: #333;
+      background-color: #222;
       border-width: 0px;
       cursor: pointer;
       transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
@@ -224,7 +227,7 @@ body {
 
 .leftContent .profile-button, .leftContent .setting-button, .leftContent .history-button, .leftContent .note-button {
   color: #eee;
-  background-color: #333;
+  background-color: #222;
   font-size: 70%;
   cursor: pointer;
   display: block;
@@ -244,49 +247,50 @@ body {
     height: 100%;
     width: 100%;
     background-color: #333; }
+  .testView .testViewFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .testOptions {
   display: grid;
   grid-template: minmax(80px, 1fr) minmax(80px, 1fr)/minmax(80px, 1fr) minmax(80px, 1fr); }
+  .testOptions .testOptionsButtons {
+    color: #eee;
+    background-color: #222;
+    width: 88%;
+    height: 40vh;
+    border-radius: 0px;
+    margin: auto;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
+    .testOptions .testOptionsButtons:hover {
+      background-color: #6A8455; }
+    .testOptions .testOptionsButtons a {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-size: 20px;
+      color: #eee; }
 
 /* pagination */
 .pagination li a {
-  border: 1px solid #333;
-  background-color: #333;
+  border: 1px solid #222;
+  background-color: #222;
   color: #eee; }
-
 .pagination li:not(.active) a:hover {
   color: #000;
   border: 1px solid #ddd;
   background: #ddd; }
 .pagination li.active a {
   color: #000 !important;
-  border: 1px solid #ddd !important;
+  border: 1px solid #222 !important;
   background: transparent !important; }
 .pagination li.disabled a {
   color: #000 !important;
-  border: 1px solid #ddd !important;
+  border: 1px solid #222 !important;
   background: transparent !important; }
-
-/* buttons */
-.testOptionsButtons {
-  color: #eee;
-  background-color: #242527;
-  width: 80%;
-  height: 38vh;
-  padding: 5px 0 5px 0;
-  opacity: 0.98;
-  border: 0px;
-  margin: auto;
-  align-items: center;
-  display: flex;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
-  .testOptionsButtons:hover {
-    color: #fff !important;
-    background-color: #7F9A65; }
-  .testOptionsButtons span {
-    margin: auto;
-    text-align: center; }
 
 .carousel-inner img {
   margin: auto;

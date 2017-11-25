@@ -12,7 +12,8 @@
 
 		/****** The navbars ******/
 		.profileNav {
-			background-color: $dark-grey;
+			background-color: $darker-grey;
+			cursor: pointer;
 			grid-column: 1;
 		}
 		.testNav {
@@ -26,7 +27,8 @@
 			}
 		}
 		.adibooNav {
-			background-color: $dark-grey;
+			background-color: $darker-grey;
+			cursor: pointer;
 			grid-column: 3;
 		}
 	}

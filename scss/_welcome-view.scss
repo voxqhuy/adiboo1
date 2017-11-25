@@ -6,6 +6,11 @@
 	#welcomeBoo {
 		background-color: $green-hornet;
 		height: 50vh;
+		#booImg {
+			display: block;
+			max-height: 80%;
+			width: auto;
+		}
 	}
 	#welcomeSignIn {
 		background-color: $dark-tan;
@@ -21,10 +26,4 @@
 	max-height: 32px;
 	font-size: 20px;
 	line-height: 24px;
-}
-
-#booImg {
-	display: block;
-	max-height: 80%;
-	width: auto;
 }

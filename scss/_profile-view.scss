@@ -87,7 +87,7 @@
 				height: 100%;
 				border-radius: 0px;
 				color: $off-white1;
-				background-color: $dark-grey;
+				background-color: $darker-grey;
 				border-width: 0px;
 				cursor: pointer;
 				transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
@@ -101,7 +101,7 @@
 				height: 100%;
 				border-radius: 0px;
 				color: $off-white1;
-				background-color: $dark-grey;
+				background-color: $darker-grey;
 				border-width: 0px;
 				cursor: pointer;
 				transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
@@ -131,7 +131,7 @@
 .leftContent {
 	.profile-button, .setting-button, .history-button, .note-button {
 		color: $off-white1;
-		background-color: $dark-grey;
+		background-color: $darker-grey;
 		font-size: 70%;
 		cursor: pointer;
 		display: block;

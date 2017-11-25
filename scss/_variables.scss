@@ -1,9 +1,9 @@
-
-
+/*** variables ***/
 /* colors */
 $off-white1: #eee;
 $off-white2: #e6e6e6;
 $dark-grey: #333;
+$darker-grey: #222;
 $light-grey: #999;
 $kiwi: #7F9A65;
 $green-hornet: #6A8455;
@@ -18,5 +18,13 @@ $card-border-color: rgba($black, .125);
 $error: #FF7B7B;
 
 /* width */
-
 $border-width : 1px;
+
+
+/*** mixins ***/
+
+@mixin centered-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
