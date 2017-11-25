@@ -1,0 +1,72 @@
+/* test views */
+
+.testView {
+  display: grid;
+  grid-auto-rows: 90% 10%;
+  .jumbotron {
+  color: $off-white1;
+  height: 100%;
+  width: 100%;
+  background-color: $dark-grey;
+}
+}
+
+.testOptions {
+  display: grid;
+  grid-template: minmax(80px, 1fr) (minmax(80px, 1fr) / minmax(80px, 1fr)) minmax(80px, 1fr);
+}
+
+/* pagination */
+.pagination li a {
+  border: 1px solid $dark-grey;
+  background-color: $dark-grey;
+  color: $off-white1;
+}
+
+.pagination {
+  li:not(.active) {
+    a:hover {
+      color: #000;
+      border: 1px solid #ddd;
+      background: #ddd;
+    }
+  }
+  li.active {
+    a {
+      color: #000 !important;
+      border: 1px solid #ddd !important;
+      background: transparent !important;
+    }
+  }
+  li.disabled {
+    a {
+      color: #000 !important;
+      border: 1px solid #ddd !important;
+      background: transparent !important;
+    }
+  }
+}
+
+/* buttons */
+
+.testOptionsButtons {
+  color: $off-white1;
+  background-color: #242527;
+  width: 80%;
+  height: 38vh;
+  padding: 5px 0 5px 0;
+  opacity: 0.98;
+  border: 0px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  &:hover {
+    color: #fff !important;
+    background-color: $kiwi;
+  }
+  span {
+    margin: auto;
+    text-align: center;
+  }
+}

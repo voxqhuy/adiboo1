@@ -4,6 +4,10 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
+var timer;
+	
+
+
 
 function checkName(name) {
 	// get name from the user
@@ -79,8 +83,27 @@ $(document).ready(function() {
 				break;
 		}
 	});
-
 	$("#profileEditBtn").click(function() {
 			window.location.href = "settings.html";
 	});
+
+	// var weeklytestAnchor = document.getElementById('weeklyTestIcon');
+	// var weeklytestIcon = document.getElementById('aaa');
+
+	// weeklytestAnchor.onmouseout = function () {
+	// 	timer = setTimeout(function(){
+ //                weeklytestIcon.src = '../Icons/weeklytest-white.png';
+ //            }, 200);
+	   
+	// };
+
+	// weeklytestAnchor.onmouseover = function () {
+	// 	timer = setTimeout(function(){
+ //                weeklytestIcon.src = '../Icons/weeklytest-black.png';
+ //            }, 200);
+	// };
+
+
+
+
 });

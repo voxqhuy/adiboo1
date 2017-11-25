@@ -1,0 +1,150 @@
+/* Profile views */
+
+.profileView {
+  display: grid;
+  grid-template-columns: 10% 20% 70%;
+  /* profile Card */
+  .profileCard {
+    display: grid;
+    grid-auto-rows: 60% 40%;
+    .card {
+      width: 100%;
+      border-radius: 0px;
+      border-width: 0.05px;
+      border-color: $light-grey;
+      display: grid;
+      grid-template-rows: 65% 1fr 1fr;
+      align-items: end;
+      color: $off-white1;
+      background-color: $kiwi;
+      a {
+        text-decoration: none;
+        color: $off-white1;
+      }
+      .profileImgDiv {
+        width: 100%;
+        height: 95%;
+        .profileImg {
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          border-top-left-radius: calc(0.25rem - 1px);
+          border-top-right-radius: calc(0.25rem - 1px);
+        }
+      }
+      .card-body {
+        padding: 0;
+        h5 {
+          width: 100%;
+          padding: 0 10% 0 10%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 18px;
+          /* fallback */
+          max-height: 20px;
+          /* fallback */
+          -webkit-line-clamp: 1;
+          /* number of lines to show */
+          -webkit-box-orient: vertical;
+        }
+        p {
+          width: 100%;
+          padding: 0 10% 0 10%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 20px;
+          /* fallback */
+          max-height: 20px;
+          /* fallback */
+          -webkit-line-clamp: 1;
+          /* number of lines to show */
+          -webkit-box-orient: vertical;
+        }
+      }
+      .updateAvatarBtn {
+        background-color: $dark-tan;
+        width: 100%;
+        height: 80%;
+        border-radius: 0px;
+      }
+      /* hide the See Profile button in Overview */
+      #hiddenUpdateAvatar {
+        visibility: hidden;
+      }
+    }
+  }
+
+  /* profile info */
+/*  .profileInfo {
+
+  }*/
+  .jumbotron {
+    height: 100%;
+    width: 100%;
+    color: $off-white1;
+    background-color: $kiwi;
+    border-radius: 0px;
+  }
+}
+
+/* buttons */
+#profileEditBtn {
+  color: $off-white1;
+  background-color: $dark-grey;
+  border-width: 0px;
+  &:hover {
+    background-color: $edit-hover-color;
+  };
+}
+
+#profileSaveButton {
+  color: $off-white1;
+  background-color: $dark-grey;
+  border-width: 0px;
+  &:hover {
+    background-color: $save-hover-color;
+  };
+}
+
+.profileButton {
+  color: $off-white1;
+  background-color: $dark-grey;
+  font-size: 70%;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border-radius: 0px;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.profile-button:hover {
+  color: #000 !important;
+  background-color: #7F9A65;
+}
+
+.setting-button, .history-button, .note-button {
+  background-color: #242527;
+  &:hover {
+    color: #000 !important;
+    background-color: #7F9A65;
+  }
+}
+
+.triggerButton {
+  width: 100%;
+  height: 100%;
+  color: $off-white1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border-radius: 0px;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+  &:hover {
+    color: #000 !important;
+    background-color: #fff;
+  }
+}

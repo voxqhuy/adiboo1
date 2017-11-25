@@ -1,3 +1,5 @@
+/* colors */
+/* width */
 * {
   margin: 0;
   padding: 0; }
@@ -11,32 +13,21 @@ body {
   height: 100%;
   width: 100%; }
 
-.carousel-inner img {
-  margin: auto;
-  width: 100%;
-  height: 80%; }
-
-.carousel-control-prev {
-  width: 4%; }
-
-.pagination > li.active > a {
-  color: #868e96 !important;
-  border: 1px solid #dee2e6 !important;
-  border-radius: 3px;
-  background: #ffffff !important; }
-
 /****** View Settings ******/
 .welcomeScreen {
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr; }
+  .welcomeScreen #welcomeBoo {
+    background-color: #6A8455;
+    height: 50vh; }
+  .welcomeScreen #welcomeSignIn {
+    background-color: #634b42;
+    height: 50vh; }
 
 .welcomeScreen div h3 {
   font-size: 5vh; }
-
-.welcomeView {
-  height: 50vh; }
 
 .welcomeView input[type="text"] {
   max-height: 32px;
@@ -54,22 +45,55 @@ body {
   display: grid;
   grid-template-rows: 7% 93%;
   grid-template-areas: "nav" "mainView"; }
+  .pageWrapper nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: minmax(40px, 10%) 80% minmax(40px, 10%);
+    /****** The navbars ******/ }
+    .pageWrapper nav .profileNav {
+      background-color: #333;
+      grid-column: 1; }
+    .pageWrapper nav .testNav {
+      grid-column: 2;
+      background-color: #7F9A65; }
+      .pageWrapper nav .testNav a {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #eee; }
+    .pageWrapper nav .adibooNav {
+      background-color: #333;
+      grid-column: 3; }
 
 /* Global main views settings */
 .mainView {
   grid-area: mainView;
   width: 100%;
-  /*	background-image: url("https://i.ytimg.com/vi/pMsz9fcOyGY/maxresdefault.jpg");
-  
-  	background-size: cover;*/
-  background: linear-gradient(-45deg, #3c4752, #694156, #85704c, #887b75);
+  background: linear-gradient(-45deg, #ce8e8e, #ccce8e, #9cce8e, #8eceae, #8ebece, #8e8ece, #be8ece, #ce8eae);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
   display: grid;
   grid-template: 5% 85% 10%/minmax(40px, 10%) 80% minmax(40px, 10%); }
+  .mainView .viewGap {
+    grid-area: 1 / 1 / auto/ span 3;
+    text-align: center;
+    color: red;
+    background-color: #eee;
+    opacity: 0.6; }
+  .mainView .leftContent {
+    grid-area: 2 / 1 / span 2 / auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); }
+  .mainView .contentBox {
+    grid-area: 2 / 2 / span 2 / auto; }
+  .mainView .rightContent {
+    grid-area: 2 / 1 / span 2 / auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); }
 
+/* changing colors background */
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%; }
@@ -91,164 +115,197 @@ body {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-.viewGap {
-  grid-area: 1 / 1 / auto/ span 3;
-  text-align: center;
-  color: red;
-  background-color: yellow;
-  opacity: 0.6; }
-
-.leftContent {
-  grid-area: 2 / 1 / span 2 / auto;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr); }
-
-.contentBox {
-  grid-area: 2 / 2 / span 2 / auto; }
-
-.rightContent {
-  grid-area: 2 / 1 / span 2 / auto;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr); }
-
-/****** The navbars ******/
-.pageWrapper nav {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: minmax(40px, 10%) 80% minmax(40px, 10%); }
-
-.profileNav {
-  grid-column: 1; }
-
-.testNav {
-  grid-column: 2; }
-  .testNav a {
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #fff; }
-
-.adibooNav {
-  grid-column: 3; }
+/* navbar icons */
+.navIcons {
+  width: 36px; }
 
 /* Profile views */
 .profileView {
   display: grid;
-  grid-template-columns: 10% 20% 70%; }
+  grid-template-columns: 10% 20% 70%;
+  /* profile Card */
+  /* profile info */
+  /*  .profileInfo {
+  
+    }*/ }
+  .profileView .profileCard {
+    display: grid;
+    grid-auto-rows: 60% 40%; }
+    .profileView .profileCard .card {
+      width: 100%;
+      border-radius: 0px;
+      border-width: 0.05px;
+      border-color: #999;
+      display: grid;
+      grid-template-rows: 65% 1fr 1fr;
+      align-items: end;
+      color: #eee;
+      background-color: #7F9A65;
+      /* hide the See Profile button in Overview */ }
+      .profileView .profileCard .card a {
+        text-decoration: none;
+        color: #eee; }
+      .profileView .profileCard .card .profileImgDiv {
+        width: 100%;
+        height: 95%; }
+        .profileView .profileCard .card .profileImgDiv .profileImg {
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          border-top-left-radius: calc(0.25rem - 1px);
+          border-top-right-radius: calc(0.25rem - 1px); }
+      .profileView .profileCard .card .card-body {
+        padding: 0; }
+        .profileView .profileCard .card .card-body h5 {
+          width: 100%;
+          padding: 0 10% 0 10%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 18px;
+          /* fallback */
+          max-height: 20px;
+          /* fallback */
+          -webkit-line-clamp: 1;
+          /* number of lines to show */
+          -webkit-box-orient: vertical; }
+        .profileView .profileCard .card .card-body p {
+          width: 100%;
+          padding: 0 10% 0 10%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 20px;
+          /* fallback */
+          max-height: 20px;
+          /* fallback */
+          -webkit-line-clamp: 1;
+          /* number of lines to show */
+          -webkit-box-orient: vertical; }
+      .profileView .profileCard .card .updateAvatarBtn {
+        background-color: #634b42;
+        width: 100%;
+        height: 80%;
+        border-radius: 0px; }
+      .profileView .profileCard .card #hiddenUpdateAvatar {
+        visibility: hidden; }
+  .profileView .jumbotron {
+    height: 100%;
+    width: 100%;
+    color: #eee;
+    background-color: #7F9A65;
+    border-radius: 0px; }
 
-.leftProfileInfo {
-  display: grid;
-  grid-auto-rows: 60% 40%; }
+/* buttons */
+#profileEditBtn {
+  color: #eee;
+  background-color: #333;
+  border-width: 0px; }
+  #profileEditBtn:hover {
+    background-color: #BDA0CB; }
 
-/* profile Card */
-.profileCard .card {
-  width: 100%;
+#profileSaveButton {
+  color: #eee;
+  background-color: #333;
+  border-width: 0px; }
+  #profileSaveButton:hover {
+    background-color: #DFAE74; }
+
+.profileButton {
+  color: #eee;
+  background-color: #333;
+  font-size: 70%;
+  cursor: pointer;
+  display: block;
+  position: relative;
   border-radius: 0px;
-  display: grid;
-  grid-template-rows: 65% 1fr 1fr;
-  align-items: end; }
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
 
-.profileImg {
+.profile-button:hover {
+  color: #000 !important;
+  background-color: #7F9A65; }
+
+.setting-button, .history-button, .note-button {
+  background-color: #242527; }
+  .setting-button:hover, .history-button:hover, .note-button:hover {
+    color: #000 !important;
+    background-color: #7F9A65; }
+
+.triggerButton {
   width: 100%;
-  text-align: center;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px); }
-
-.card-body {
-  padding: 0; }
-  .card-body h5 {
-    width: 100%;
-    padding: 0 10% 0 10%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    line-height: 18px;
-    /* fallback */
-    max-height: 20px;
-    /* fallback */
-    -webkit-line-clamp: 1;
-    /* number of lines to show */
-    -webkit-box-orient: vertical; }
-  .card-body p {
-    width: 100%;
-    padding: 0 10% 0 10%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    line-height: 16px;
-    /* fallback */
-    max-height: 18px;
-    /* fallback */
-    -webkit-line-clamp: 1;
-    /* number of lines to show */
-    -webkit-box-orient: vertical; }
-
-/* hide the See Profile button in Overview */
-#hiddenSeeProfile {
-  visibility: hidden; }
-
-.seeProfileBtn {
-  width: 100%;
-  height: 80%;
-  border-radius: 0px; }
-
-.card a {
-  text-decoration: none;
-  color: #fff; }
-
-.profileInfo .jumbotron {
   height: 100%;
-  width: 100%;
-  background-color: #242527;
-  border-radius: 0px; }
-
-.historyMonth, .noteList {
-  background-color: #000; }
+  color: #eee;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border-radius: 0px;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
+  .triggerButton:hover {
+    color: #000 !important;
+    background-color: #fff; }
 
 /* test views */
 .testView {
   display: grid;
   grid-auto-rows: 90% 10%; }
+  .testView .jumbotron {
+    color: #eee;
+    height: 100%;
+    width: 100%;
+    background-color: #333; }
 
 .testOptions {
   display: grid;
   grid-template: minmax(80px, 1fr) minmax(80px, 1fr)/minmax(80px, 1fr) minmax(80px, 1fr); }
 
-.contentBox .jumbotron {
-  height: 100%;
-  width: 100%;
-  background-color: #242527; }
-
+/* pagination */
 .pagination li a {
-  border: 1px solid #000000;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #eee; }
+
+.pagination li:not(.active) a:hover {
+  color: #000;
+  border: 1px solid #ddd;
+  background: #ddd; }
+.pagination li.active a {
+  color: #000 !important;
+  border: 1px solid #ddd !important;
+  background: transparent !important; }
+.pagination li.disabled a {
+  color: #000 !important;
+  border: 1px solid #ddd !important;
+  background: transparent !important; }
+
+/* buttons */
+.testOptionsButtons {
+  color: #eee;
   background-color: #242527;
-  color: #ffffff; }
+  width: 80%;
+  height: 38vh;
+  padding: 5px 0 5px 0;
+  opacity: 0.98;
+  border: 0px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
+  .testOptionsButtons:hover {
+    color: #fff !important;
+    background-color: #7F9A65; }
+  .testOptionsButtons span {
+    margin: auto;
+    text-align: center; }
 
-/****** Colors ******/
-.greenBg {
-  background-color: #167a3e; }
+.carousel-inner img {
+  margin: auto;
+  width: 100%;
+  height: 80%; }
 
-.tealBg {
-  background-color: #0b9178; }
+.carousel-control-prev {
+  width: 4%; }
 
-.lightGreyBg {
-  background-color: #474e5d; }
-
-.darkGreyBg {
-  background-color: #242527; }
-
-.purpleBg {
-  background-color: #652984; }
-
-.orangeBg {
-  background-color: #b75409; }
-
-/* Global divs */
-/*.div50height {
-	position: relative;
-    height: 50vh;
-    width: 100%;
-}*/
 .centeredContent {
   display: flex;
   justify-content: center;
@@ -260,73 +317,5 @@ body {
   font-size: 26px;
   font-weight: bold;
   font-family: "Gill Sans", sans-serif; }
-
-/********** Items **********/
-/***** Buttons *****/
-/* test buttons */
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-@media (min-width: 768px) {
-  .profile-menu .collapse {
-    display: block; } }
-.testOptionsButtons {
-  color: #fff;
-  background-color: #242527;
-  width: 80%;
-  height: 38vh;
-  padding: 5px 0 5px 0;
-  opacity: 0.98;
-  border: 0px;
-  margin: auto;
-  align-items: center;
-  display: flex;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
-  .testOptionsButtons img {
-    width: 70%; }
-  .testOptionsButtons:hover {
-    color: #000 !important;
-    background-color: #167a3e; }
-  .testOptionsButtons span {
-    margin: auto;
-    text-align: center; }
-
-/* profile buttons */
-.profileButton {
-  color: #fff;
-  font-size: 70%;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  border-radius: 0px;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
-
-.profile-button:hover {
-  color: #000 !important;
-  background-color: #0b9178; }
-
-.setting-button, .history-button, .note-button {
-  background-color: #242527; }
-  .setting-button:hover, .history-button:hover, .note-button:hover {
-    color: #000 !important;
-    background-color: #0b9178; }
-
-.triggerButton {
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  border-radius: 0px;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
-  .triggerButton:hover {
-    color: #000 !important;
-    background-color: #fff; }
-
-/****** Images ******/
-/* navbar icons */
-.navIcons {
-  width: 36px; }
 
 /*# sourceMappingURL=style.css.map */
