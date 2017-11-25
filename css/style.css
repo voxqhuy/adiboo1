@@ -124,10 +124,7 @@ body {
   display: grid;
   grid-template-columns: 10% 20% 70%;
   /* profile Card */
-  /* profile info */
-  /*  .profileInfo {
-  
-    }*/ }
+  /* left history and note's content */ }
   .profileView .profileCard {
     display: grid;
     grid-auto-rows: 60% 40%; }
@@ -196,6 +193,9 @@ body {
     color: #eee;
     background-color: #7F9A65;
     border-radius: 0px; }
+  .profileView .historyMonth, .profileView .noteList {
+    background-color: #333;
+    overflow: scroll; }
 
 /* buttons */
 #profileEditBtn {

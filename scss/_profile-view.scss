@@ -77,10 +77,6 @@
     }
   }
 
-  /* profile info */
-/*  .profileInfo {
-
-  }*/
   .jumbotron {
     height: 100%;
     width: 100%;
@@ -88,7 +84,15 @@
     background-color: $kiwi;
     border-radius: 0px;
   }
+
+  /* left history and note's content */
+  .historyMonth, .noteList {
+  background-color: $dark-grey;
+  overflow: scroll;
 }
+}
+
+
 
 /* buttons */
 #profileEditBtn {
