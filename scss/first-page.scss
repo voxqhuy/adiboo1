@@ -26,7 +26,7 @@ a {
 
 	.text {
 		// padding: 0 0.3em;
-		font-family: proxima-nova;
+		font-family: 'Source Code Pro', monospace;
 		transform: translate3d(0,$pad,0);
 		display: block;
 		transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
