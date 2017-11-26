@@ -11,7 +11,7 @@
 		.card {
 			width: 100%;
 			border-radius: 0px;
-			border-width: 0.05px;
+			border-width: 0px;
 			border-color: $light-grey;
 			display: grid;
 			grid-template-rows: 65% 1fr 1fr;
@@ -50,37 +50,13 @@
 		}
 
 		.profileEditSaveBtn {
-			.triggerButton {
-
-
-			}
 			#profileEditBtn {
-				width: 100%;
-				height: 100%;
-				border-radius: 0px;
-				color: $off-white1;
-				background-color: $darker-grey;
-				border-width: 0px;
-				cursor: pointer;
-				transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-				&:hover {
-					color: #000;
-					background-color: $edit-hover-color;
-				};
+				@include hover-grow-affecting-button($off-white1,
+				 $darker-grey, $black, $edit-hover-color, 1.04);
 			}
 			#profileSaveButton {
-				width: 100%;
-				height: 100%;
-				border-radius: 0px;
-				color: $off-white1;
-				background-color: $darker-grey;
-				border-width: 0px;
-				cursor: pointer;
-				transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-				&:hover {
-					color: #000;
-					background-color: $save-hover-color;
-				};
+				@include hover-grow-affecting-button($off-white1,
+				 $darker-grey, $black, $save-hover-color, 1.04);
 			}
 		}
 	}
@@ -89,7 +65,7 @@
 		height: 100%;
 		width: 100%;
 		color: $off-white1;
-		background-color: $kiwi;
+		background-color: $green-hornet;
 		border-radius: 0px;
 	}
 
@@ -102,17 +78,7 @@
 
 .leftContent {
 	.profile-button, .setting-button, .history-button, .note-button {
-		color: $off-white1;
-		background-color: $darker-grey;
-		font-size: 70%;
-		cursor: pointer;
-		display: block;
-		position: relative;
-		border-radius: 0px;
-		transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-		&:hover {
-			color: #000 !important;
-			background-color: #7F9A65;
-		}
+		@include hover-affecting-button($off-white1,
+				 $darker-grey, $black, $kiwi);
 	}
 }

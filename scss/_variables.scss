@@ -17,12 +17,12 @@ $card-border-color: rgba($black, .125);
 
 $error: #FF7B7B;
 
+/*$edit-hover-button: $off-white1, $darker-grey, $black, $edit-hover-color;*/
 /* width */
-$border-width : 1px;
+/*$border-width : 1px;*/
 
 
 /*** mixins ***/
-
 @mixin centered-content {
 	display: flex;
 	justify-content: center;
@@ -43,5 +43,33 @@ $border-width : 1px;
 	-webkit-line-clamp: $maxLine;
 	/* number of lines to show */
 	-webkit-box-orient: vertical;
-	
+}
+
+@mixin transition-affecting-button($original-color, $original-background-color, $hover-color, $hover-background-color) {
+	width: 100%;
+	height: 100%;
+	border-width: 0px;
+	border-radius: 0px;
+	position: relative;
+	color: $original-color;
+	background-color: $original-background-color;	
+	cursor: pointer;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@mixin hover-affecting-button($original-color, $original-background-color, $hover-color, $hover-background-color) {
+	@include transition-affecting-button($original-color, $original-background-color, $hover-color, $hover-background-color);
+	&:hover {
+		color: $hover-color;
+		background-color: $hover-background-color;
+	};
+}
+
+@mixin hover-grow-affecting-button($original-color, $original-background-color, $hover-color, $hover-background-color, $transform-time) {
+	@include transition-affecting-button($original-color, $original-background-color, $hover-color, $hover-background-color);
+	&:hover {
+		transform: scale($transform-time);
+		color: $hover-color;
+		background-color: $hover-background-color;
+	};
 }
