@@ -31,9 +31,7 @@
 		a {
 			width: 100%;
 			height: 100%;
-			align-items: center;
-			justify-content: center;
-			display: flex;
+			@include centered-content;
 			font-size: 20px;
 			color: $off-white1;
 		}
@@ -51,23 +49,19 @@
 	}
 	li:not(.active) {
 		a:hover {
-			color: #000;
-			border: 1px solid #ddd;
-			background: #ddd;
+			color: $black;
+			border: 1px solid $lighter-grey;
+			background: $lighter-grey;
 		}
 	}
 	li.active {
 		a {
-			color: #000 !important;
-			border: 1px solid $darker-grey !important;
-			background: transparent !important;
+			@include transparent-button;
 		}
 	}
 	li.disabled {
 		a {
-			color: #000 !important;
-			border: 1px solid $darker-grey !important;
-			background: transparent !important;
+			@include transparent-button;
 		}
 	}
 }

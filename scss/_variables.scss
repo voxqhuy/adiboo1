@@ -5,10 +5,12 @@ $off-white2: #e6e6e6;
 $dark-grey: #333;
 $darker-grey: #222;
 $light-grey: #999;
+$lighter-grey: #ddd;
 $kiwi: #7F9A65;
 $green-hornet: #6A8455;
 $dark-tan: #634b42;
 $black : #000;
+$white : #fff;
 
 $edit-hover-color: #BDA0CB;
 $edit-unhover-color: #BF5FFF;
@@ -72,4 +74,30 @@ $error: #FF7B7B;
 		color: $hover-color;
 		background-color: $hover-background-color;
 	};
+}
+
+@mixin transparent-button {
+	color: $black !important;
+	border: 1px solid $darker-grey !important;
+	background: transparent !important;
+}
+
+@mixin rectangle-button($font-color, $bg-color, $box-height: 100%) {
+	height: $box-height;
+	width: 100%;
+	border-radius: 0px;
+	color: $font-color;
+	background-color: $bg-color;
+}
+
+@mixin gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
