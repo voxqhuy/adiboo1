@@ -22,7 +22,7 @@ function checkName(name) {
 }
 
 function toSecondPage(name) {
-	window.location.href = "Test%20Page/test.html";
+	window.location.href = "homepage.html";
 }
 
 
