@@ -1,0 +1,35 @@
+.homeOptions {
+	display: grid;
+	grid-template: minmax(80px, 1fr) (minmax(80px, 1fr) / minmax(80px, 1fr)) minmax(80px, 1fr);
+	.homepage-button-container {
+		position: relative;
+		display: inline-block;
+		width: 88%;
+		height: 40vh;
+		perspective: 300px;
+		font-size: 24px;
+		margin: auto;
+		.homeOptionsButtons {
+			@include hover-3d-button;
+			color: $off-white1;
+			background-color: $darker-grey;
+			transform: translateZ(-20vh);
+/*			margin: auto;*/
+			.front , .bottom {
+				@include centered-content;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			.front {
+				transform: translateZ(19.9vh);
+			}
+			.bottom {
+				transform: rotateX(-90deg) translateZ(20vh);
+			}
+			&:hover {
+				transform: translateZ(-20vh) rotateX(90deg);
+			}
+		}
+	}
+}

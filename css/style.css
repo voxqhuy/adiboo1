@@ -125,6 +125,50 @@ body {
 .navIcons {
   width: 36px; }
 
+.homeOptions {
+  display: grid;
+  grid-template: minmax(80px, 1fr) minmax(80px, 1fr)/minmax(80px, 1fr) minmax(80px, 1fr); }
+  .homeOptions .homepage-button-container {
+    position: relative;
+    display: inline-block;
+    width: 88%;
+    height: 40vh;
+    perspective: 300px;
+    font-size: 24px;
+    margin: auto; }
+    .homeOptions .homepage-button-container .homeOptionsButtons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      transform-style: preserve-3d;
+      transition: all 0.333s;
+      color: #eee;
+      background-color: #222;
+      transform: translateZ(-20vh);
+      /*			margin: auto;*/ }
+      .homeOptions .homepage-button-container .homeOptionsButtons .front {
+        background: #222; }
+      .homeOptions .homepage-button-container .homeOptionsButtons .bottom {
+        background: #151515; }
+      .homeOptions .homepage-button-container .homeOptionsButtons:hover .bottom {
+        background: #222; }
+      .homeOptions .homepage-button-container .homeOptionsButtons:hover .front {
+        background: #2f2f2f; }
+      .homeOptions .homepage-button-container .homeOptionsButtons .front, .homeOptions .homepage-button-container .homeOptionsButtons .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      .homeOptions .homepage-button-container .homeOptionsButtons .front {
+        transform: translateZ(19.9vh); }
+      .homeOptions .homepage-button-container .homeOptionsButtons .bottom {
+        transform: rotateX(-90deg) translateZ(20vh); }
+      .homeOptions .homepage-button-container .homeOptionsButtons:hover {
+        transform: translateZ(-20vh) rotateX(90deg); }
+
 /* Profile views */
 .profileView {
   display: grid;

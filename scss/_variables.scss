@@ -76,6 +76,29 @@ $error: #FF7B7B;
 	};
 }
 
+@mixin hover-3d-button {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 0px;
+	transform-style: preserve-3d;
+	transition: all 0.333s;
+	.front {
+		background: $darker-grey;
+	}
+	.bottom {
+		background: darken($darker-grey, 5%);
+	}
+	&:hover {
+		.bottom {
+			background: $darker-grey;
+		}
+		.front {
+			background: lighten($darker-grey, 5%);
+		}
+	};
+}
+
 @mixin transparent-button {
 	color: $black !important;
 	border: 1px solid $darker-grey !important;
