@@ -250,7 +250,7 @@ body {
     background-color: #333;
     overflow: scroll; }
 
-.leftContent .profile-button, .leftContent .setting-button, .leftContent .history-button, .leftContent .note-button {
+.leftContent .overview_button, .leftContent .setting_button, .leftContent .history_button, .leftContent .note_button {
   width: 100%;
   height: 100%;
   border-width: 0px;
@@ -260,7 +260,7 @@ body {
   background-color: #222;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
-  .leftContent .profile-button:hover, .leftContent .setting-button:hover, .leftContent .history-button:hover, .leftContent .note-button:hover {
+  .leftContent .overview_button:hover, .leftContent .setting_button:hover, .leftContent .history_button:hover, .leftContent .note_button:hover {
     color: #000;
     background-color: #7F9A65; }
 

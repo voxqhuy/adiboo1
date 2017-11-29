@@ -1,6 +1,6 @@
 .homeOptions {
 	display: grid;
-	grid-template: minmax(80px, 1fr) (minmax(80px, 1fr) / minmax(80px, 1fr)) minmax(80px, 1fr);
+	grid-template: minmax(80px, 1fr) minmax(80px, 1fr) / minmax(80px, 1fr) minmax(80px, 1fr);
 	.homepage-button-container {
 		position: relative;
 		display: inline-block;

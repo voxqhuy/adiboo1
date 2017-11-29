@@ -64,7 +64,7 @@
 }
 
 .leftContent {
-	.profile-button, .setting-button, .history-button, .note-button {
+	.overview_button, .setting_button, .history_button, .note_button {
 		@include hover-affecting-button($off-white1,
 				 $darker-grey, $black, $kiwi);
 	}

@@ -64,24 +64,34 @@ $(document).ready(function() {
 
 	// Profile buttons' handlers
 	$(".btn").click(function() {
-		var id = this.id;
-		switch (id) {
-			case 'profileOverviewBtn':
+		var classes = this.classList;
+		if (classes.contains("overview_button")) {
 			window.location.href = "overview.html";
-			break;
-
-			case 'profileSettingsBtn':
+		} else if (classes.contains("setting_button")) {
 			window.location.href = "settings.html";
-			break;
-
-			case 'profileHistoryBtn':
+		} else if (classes.contains("history_button")) {
 			window.location.href = "history.html";
-			break;
-
-			case 'profileNotesBtn':
+		} else if (classes.contains("note_button")) {
 			window.location.href = "notes.html";
-			break;
 		}
+		// var id = this.id;
+		// switch (id) {
+		// 	case 'profileOverviewBtn':
+		// 	window.location.href = "overview.html";
+		// 	break;
+
+		// 	case 'profileSettingsBtn':
+		// 	window.location.href = "settings.html";
+		// 	break;
+
+		// 	case 'profileHistoryBtn':
+		// 	window.location.href = "history.html";
+		// 	break;
+
+		// 	case 'profileNotesBtn':
+		// 	window.location.href = "notes.html";
+		// 	break;
+		// }
 	});
 	$("#profileEditBtn").click(function() {
 		window.location.href = "settings.html";
