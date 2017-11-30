@@ -1,6 +1,13 @@
 /* test views */
 
-.testView {
+
+.leftContent {
+	.back_button {
+		@include hover-affecting-button($white, $dark-grey, $black, $light-grey);
+	}
+}
+
+.lobbyBox {
 	display: grid;
 	grid-auto-rows: 90% 10%;
 	.jumbotron {
@@ -20,7 +27,7 @@
 	.testOptionsButtons {
 		color: $off-white1;
 		background-color: $darker-grey;
-		width: 88%;
+		width: 92%;
 		height: 40vh;
 		border-radius: 0px;
 		margin: auto;

@@ -97,6 +97,10 @@ $(document).ready(function() {
 		window.location.href = "settings.html";
 	});
 
+	$("#testBackBtn").click(function() {
+		window.location.href = "../homepage.html";
+	});
+
 	// var weeklytestAnchor = document.getElementById('weeklyTestIcon');
 	// var weeklytestIcon = document.getElementById('aaa');
 

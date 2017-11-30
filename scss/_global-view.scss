@@ -7,9 +7,9 @@
 
 	nav {
 		grid-area: nav;
+		height: 100%;
 		display: grid;
 		grid-template-columns: minmax(40px, 10%) 80% minmax(40px, 10%);
-
 		/****** The navbars ******/
 		.profileNav {
 			background-color: $darker-grey;
@@ -21,7 +21,8 @@
 			background-color: $kiwi;
 			a {
 				width: 100%;
-				text-align: center;
+				height: 100%;
+				@include centered-content;
 				text-decoration: none;
 				color: $off-white1;
 			}
@@ -45,26 +46,33 @@
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 	display: grid;
-	grid-template: 5% 85% (10% / minmax(40px, 10%)) 80% minmax(40px, 10%);
+	grid-template: 4% 95% 1% / minmax(40px, 10%) 80% minmax(40px, 10%);
 	.viewGap {
 		grid-area: 1 / 1 / auto/ span 3;
 		text-align: center;
 		color: red;
 		background-color: $off-white1;
-		opacity: 0.6;
+		opacity: 0.5;
 	}
 	.leftContent {
-		grid-area: 2 / 1 / span 2 / auto;
+		grid-area: 2 / 1;
 		display: grid;
 		grid-template-rows: repeat(4, 1fr);
 	}
 	.contentBox {
+		grid-area: 2 / 2;
+	}
+	.lobbyBox {
 		grid-area: 2 / 2 / span 2 / auto;
 	}
 	.rightContent {
 		grid-area: 2 / 1 / span 2 / auto;
 		display: grid;
 		grid-template-rows: repeat(4, 1fr);
+	}
+	.footerContent {
+		grid-area: 3 / 2;
+		@include centered-content;
 	}
 }
 
