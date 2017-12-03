@@ -1,15 +1,15 @@
-var requestURL = 'https://api.myjson.com/bins/q4ib7';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
+// var requestURL = 'https://api.myjson.com/bins/q4ib7';
+// var request = new XMLHttpRequest();
+// request.open('GET', requestURL);
+// request.responseType = 'json';
+// request.send();
 
-var timer;
-
-
+// var timer;
 
 
-function checkName(name) {
+
+
+var checkName = (name) => {
 	// get name from the user
 	// if name is right, go to next page; otherwise, return an error
 	if (name.toLowerCase() == "tu" || name.toLowerCase() == "sang") {
@@ -21,7 +21,7 @@ function checkName(name) {
 	}
 }
 
-function toSecondPage(name) {
+var toSecondPage = (name) => {
 	window.location.href = "homepage.html";
 }
 
