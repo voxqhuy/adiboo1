@@ -12,11 +12,13 @@
 		grid-template-columns: minmax(40px, 10%) 80% minmax(40px, 10%);
 		/****** The navbars ******/
 		.profileNav {
+			@extend %centeredContent;
 			background-color: $darker-grey;
 			cursor: pointer;
 			grid-column: 1;
 		}
 		.testNav {
+			@extend %centeredContent;
 			grid-column: 2;
 			background-color: $kiwi;
 			a {
@@ -28,6 +30,7 @@
 			}
 		}
 		.adibooNav {
+			@extend %centeredContent;
 			background-color: $darker-grey;
 			cursor: pointer;
 			grid-column: 3;

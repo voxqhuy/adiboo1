@@ -4,6 +4,11 @@
 /* width */
 /*$border-width : 1px;*/
 /*** mixins ***/
+.pageWrapper nav .profileNav, .pageWrapper nav .testNav, .pageWrapper nav .adibooNav {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -350,11 +355,6 @@ body {
 
 .carousel-control-prev {
   width: 4%; }
-
-.centeredContent {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 /****** Font Styles ******/
 .navFont {

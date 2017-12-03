@@ -1,5 +1,6 @@
 @import "helper/variables";
 @import "helper/mixins";
+@import "helper/placeholders";
 * {
 	margin: 0;
 	padding: 0;
@@ -23,12 +24,6 @@ body {
 @import "profile-view";
 @import "test-view";
 @import "adiboo-view";
-
-.centeredContent {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 /****** Font Styles ******/
 
