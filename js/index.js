@@ -9,7 +9,7 @@
 
 
 
-var checkName = (name) => {
+var checkName = name => {
 	// get name from the user
 	// if name is right, go to next page; otherwise, return an error
 	if (name.toLowerCase() == "tu" || name.toLowerCase() == "sang") {
@@ -21,7 +21,7 @@ var checkName = (name) => {
 	}
 }
 
-var toSecondPage = (name) => {
+var toSecondPage = name => {
 	window.location.href = "homepage.html";
 }
 
