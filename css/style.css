@@ -4,7 +4,7 @@
 /* width */
 /*$border-width : 1px;*/
 /*** mixins ***/
-.pageWrapper nav .profileNav, .pageWrapper nav .testNav, .pageWrapper nav .adibooNav, .mainView .footerContent, .homeOptions .homepage-button-container .homeOptionsButtons .front, .homeOptions .homepage-button-container .homeOptionsButtons .bottom, .lobbyBox .testViewFooter, .testOptions .testOptionsButtons a {
+.pageWrapper nav .profileNav, .pageWrapper nav .testNav, .pageWrapper nav .adibooNav, .mainView .footerContent, .homeOptions .homepage-button-container .homeOptionsButtons .front, .homeOptions .homepage-button-container .homeOptionsButtons .bottom, .profileView .profileCard .card .updateAvatarBtn, .lobbyBox .testViewFooter, .testOptions .testOptionsButtons a {
   display: flex;
   justify-content: center;
   align-items: center; }
