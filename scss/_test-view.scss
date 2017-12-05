@@ -2,8 +2,22 @@
 
 
 .leftContent {
-	.back_button {
-		@include hover-affecting-button($white, $dark-grey, $black, $light-grey);
+	.back_button_div {
+		display: grid;
+		grid-template: 30% 70% / 90% 10%;
+		.back_button {
+			width: 0;
+			grid-area: 1 / 1;
+			border-bottom: 120px solid transparent; 
+			border-left: 120px solid $darker-grey; 
+			a{
+				position: relative;
+				right: 100px;
+				top: 30px; 
+				text-decoration: none;
+				color: $off-white1;
+			}	
+		}
 	}
 }
 

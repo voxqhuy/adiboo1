@@ -98,9 +98,14 @@ $(document).ready(function() {
 	});
 
 	$("#testBackBtn").click(function() {
-		window.location.href = "../homepage.html";
+		window.location = $(this).find("a").attr("href"); 
+  		return false;
 	});
 
+	$("#readingBackBtn").click(function() {
+		window.location = $(this).find("a").attr("href"); 
+  		return false;
+	});
 	// var weeklytestAnchor = document.getElementById('weeklyTestIcon');
 	// var weeklytestIcon = document.getElementById('aaa');
 

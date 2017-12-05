@@ -51,6 +51,7 @@
 		opacity: 0.5;
 	}
 	.leftContent {
+		height: 100%;
 		grid-area: 2 / 1;
 		display: grid;
 		grid-template-rows: repeat(4, 1fr);
