@@ -21,13 +21,8 @@
 			@extend %centeredContent;
 			grid-column: 2;
 			background-color: $kiwi;
-			a {
-				width: 100%;
-				height: 100%;
-				@include centered-content;
-				text-decoration: none;
-				color: $off-white1;
-			}
+			color: $off-white1;
+			text-decoration: none;
 		}
 		.adibooNav {
 			@extend %centeredContent;
@@ -75,7 +70,7 @@
 	}
 	.footerContent {
 		grid-area: 3 / 2;
-		@include centered-content;
+		@extend %centeredContent;
 	}
 }
 

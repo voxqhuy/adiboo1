@@ -1,9 +1,4 @@
 /*** mixins ***/
-@mixin centered-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 @mixin ellipsis($maxWidth, $lineHeight, $maxHeight, $maxLine) {
 	width: 100%;
