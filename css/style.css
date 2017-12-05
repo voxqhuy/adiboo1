@@ -62,7 +62,6 @@ body {
     /****** The navbars ******/ }
     .pageWrapper nav .profileNav {
       background-color: #222;
-      cursor: pointer;
       grid-column: 1; }
     .pageWrapper nav .testNav {
       grid-column: 2;
@@ -71,7 +70,6 @@ body {
       text-decoration: none; }
     .pageWrapper nav .adibooNav {
       background-color: #222;
-      cursor: pointer;
       grid-column: 3; }
 
 /* Global main views settings */

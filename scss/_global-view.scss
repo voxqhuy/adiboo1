@@ -14,7 +14,6 @@
 		.profileNav {
 			@extend %centeredContent;
 			background-color: $darker-grey;
-			cursor: pointer;
 			grid-column: 1;
 		}
 		.testNav {
@@ -27,7 +26,6 @@
 		.adibooNav {
 			@extend %centeredContent;
 			background-color: $darker-grey;
-			cursor: pointer;
 			grid-column: 3;
 		}
 	}
