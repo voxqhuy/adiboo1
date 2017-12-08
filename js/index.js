@@ -5,14 +5,19 @@
 // request.send();
 
 // var timer;
-
-
-
+var user1 = {
+	name: 'sang',
+	greet: `hello ${this.name}`
+}
+var user2 = {
+	name: 'tu'
+}
+user2.greet = user1.greet
 
 var checkName = name => {
 	// get name from the user
 	// if name is right, go to next page; otherwise, return an error
-	if (name.toLowerCase() == "tu" || name.toLowerCase() == "sang") {
+	if (name.toLowerCase() == user1.name || name.toLowerCase() == user2.name) {
 		toSecondPage(name);
 	} else if  (name == "") {
 		document.getElementById("nameError").innerHTML = "Your name cannot be empty";
