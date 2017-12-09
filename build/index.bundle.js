@@ -9,31 +9,34 @@
 // var timer;
 var user1 = {
 	_name: 'sang',
-	_greet: 'hello ' + undefined.name,
+	_greet: 'hello sang',
 
 	set greet(newGreet) {
 		if (typeof newGreet === "string") {
-			this.greet = newGreet;
+			this._greet = newGreet;
 		} else {
 			return 'Invalid';
 		}
 	},
 
-	get greet() {
-		return this._greet;
+	get name() {
+		return this._name;
 	}
 };
 
 var user2 = {
-	_name: 'tu'
+	_name: 'tu',
+	get name() {
+		return this._name;
+	}
 };
 
-user2.greet = user1.greet;
+user2._greet = user1._greet;
 
 var checkName = function checkName(name) {
 	// get name from the user
 	// if name is right, go to next page; otherwise, return an error
-	if (name.toLowerCase() == user1._name || name.toLowerCase() == user2._name) {
+	if (name.toLowerCase() == user1.name || name.toLowerCase() == user2.name) {
 		toSecondPage(name);
 	} else if (name == "") {
 		document.getElementById("nameError").innerHTML = "Your name cannot be empty";
