@@ -1,0 +1,27 @@
+{
+  "name": "adiboo1",
+  "version": "1.0.0",
+  "description": "A stupid website for studying purpose.",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel --presets es2015 js/index.js -o build/index.bundle.js",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kohnewlife/adiboo1.git"
+  },
+  "author": "Vo Huy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kohnewlife/adiboo1/issues"
+  },
+  "homepage": "https://github.com/kohnewlife/adiboo1#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.10.0"
+  }
+}

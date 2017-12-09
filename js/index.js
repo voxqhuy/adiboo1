@@ -6,18 +6,32 @@
 
 // var timer;
 var user1 = {
-	name: 'sang',
-	greet: `hello ${this.name}`
-}
+	_name: 'sang',
+	_greet: `hello ${this.name}`,
+
+	set greet(newGreet) {
+		if (typeof newGreet === "string") {
+			this.greet = newGreet;
+		} else {
+			return 'Invalid';
+		}
+	},
+
+	get greet() {
+		return this._greet;
+	}
+};
+
 var user2 = {
-	name: 'tu'
-}
-user2.greet = user1.greet
+	_name: 'tu'
+};
+
+user2.greet = user1.greet;
 
 var checkName = name => {
 	// get name from the user
 	// if name is right, go to next page; otherwise, return an error
-	if (name.toLowerCase() == user1.name || name.toLowerCase() == user2.name) {
+	if (name.toLowerCase() == user1._name || name.toLowerCase() == user2._name) {
 		toSecondPage(name);
 	} else if  (name == "") {
 		document.getElementById("nameError").innerHTML = "Your name cannot be empty";
